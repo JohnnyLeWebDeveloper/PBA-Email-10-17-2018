@@ -1,0 +1,387 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Playfair+Display:400i" rel="stylesheet">
+        <style type="text/css">
+			/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+			span.MsoHyperlink { color:inherit; }
+			span.MsoHyperlinkFollowed { mso-style-priority:99; color:inherit; }
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+			body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+			img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+			/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table{border-collapse:collapse !important;}
+			body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+
+			/* ========== Page Styles ========== */
+			#templateContainer{width:600px;}
+			body, #bodyTable{background-color:#ECEBEB; font-family:'Montserrat', "Century Gothic", sans-serif; font-size: 16px; }
+			h1, h2, h3, h4 {color:#FFFFFF; display:block; font-family:'Montserrat', "Century Gothic", sans-serif; font-style:normal; font-weight:bold; line-height:100%; letter-spacing:normal; margin-top:0; margin-right:0; margin-bottom:10px; margin-left:0;}
+			h1 {font-size:30px;} 
+			h2 {font-size:26px;} 
+			h3 {font-size:24px;} 
+			h4 {font-size:18px;}
+			p {color: #FFFFFF; margin-top: 0; margin-bottom: 15px; font-size: 16px;}
+			li {font-size: 16px;}
+			hr {margin: 0;}
+
+			/* ========== Header Styles ========== */
+			#templatePreheader{background-color:#ECEBEB;}
+			.preheaderContent{color:#808080; font-family:Helvetica, Arial, sans-serif; font-size:10px; line-height:125%; text-align:center;}
+			.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{color:#606060; font-weight:normal; text-decoration:underline;}
+			#templateHeader{background-color:#ECEBEB;}
+			.headerContent{color:#505050; font-family:Helvetica, Arial, sans-serif; font-size:20px; font-weight:bold; line-height:100%; padding-top:0; padding-right:0; padding-bottom:0; padding-left:0; text-align:left; vertical-align:middle; background-color:#ECEBEB;}
+			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{color:#FD0F17; font-weight:normal; text-decoration:underline;}
+
+			/* ========== Body Styles ========== */
+			#templateBody{background-color:#000000;}
+			.bodyContent{color:#FFFFFF; font-family:'Montserrat', sans-serif; font-size:14px; line-height:150%;padding:30px 20px;text-align:left; background-color:#000000;}
+			.bodyContent a, .bodyContent a:link, .bodyContent a:visited, .bodyContent a:focus /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{color:#007bff; font-weight:normal; text-decoration:none; outline: none; border: none;}
+			.bodyContent img{display:inline; height:auto; max-width:560px;}
+
+			/* ========== Footer Styles ========== */
+			#templateFooter{background-color:#ECEBEB;}
+			.footerContent{color:#808080; font-family:Helvetica, Arial, sans-serif; font-size:10px; line-height:150%; padding-top:20px; padding-right:20px; padding-bottom:20px; padding-left:20px; text-align:left;}
+			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{color:#000000; font-weight:bold; text-decoration:none;}
+            
+            /* MY STYLES */
+            .text-center {text-align:center;}
+            .show-mobile-only {mso-hide: all; display: none; visibility: hidden; width: 0;}
+			.img-full-width{height:auto; max-width:600px;}
+
+			/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+
+            @media only screen and (max-width: 480px){
+				/* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */d
+				body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+                body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+
+				/* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+				#bodyCell{padding:10px !important;}
+
+				/* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+
+				/* ======== Page Styles ======== */
+				#templateContainer{max-width:600px !important; width:100% !important;}
+				h1{font-size:24px !important; line-height:100% !important;}
+				h2{font-size:20px !important; line-height:100% !important;}
+				h3{font-size:18px !important; line-height:100% !important;}
+				h4{font-size:16px !important; line-height:100% !important;}
+
+				/* ======== Header Styles ======== */
+				.headerContent{font-size:20px !important; line-height:125% !important;}
+
+				/* ======== Body Styles ======== */
+				.bodyContent{font-size:16px !important;}
+
+				/* ======== Footer Styles ======== */
+				.footerContent{font-size:14px !important; line-height:115% !important;}
+				.footerContent a{display:block !important;}
+                
+                /* MY STYLES */
+				.pba-logo {width: 120px !important;}
+				.nav {font-size: 8px !important;}
+				.cta {font-size: 16px !important;}
+				.pricing-border {border: 0 !important;}
+				.copyright {font-size: 8px !important;}
+				.img-full-width{height:auto !important; max-width:600px !important; width:100% !important;}
+				.d-none-mobile {display: none !important;}
+				.d-block-mobile {display:block !important; width:auto !important; margin-bottom: 20px !important;}
+                .text-center-mobile {text-align: center !important;}
+                .img-100-mobile {width: 100% !important;}
+                .show-desktop-only {display: none !important; mso-hide: all !important;}
+                .show-mobile-only {display: block !important; mso-hide: none !important; visibility: visible !important; width: 100% !important;}
+				.height-0-mobile {display: none !important;}
+				.width-auto-mobile {width: auto !important;}
+				.m-0-mobile {margin-right: auto !important; margin-left: auto !important; margin-bottom: 0 !important;}
+				.height-0-mobile {height: 0 !important;}
+				.text-center-mobile {text-align: center !important;}
+
+				/* ISSE / NAHA STYLES */
+				.highlight-text {
+					font-size: 16px !important;
+				}
+			}
+		</style>
+		<!--[if mso]>
+		<style type=”text/css”>
+			h1, h2, h3, h4, p, body {
+				font-family: "Century Gothic", sans-serif;
+			}
+			.quote-font { font-family: Times,Times New Roman,serif; }
+		</style>
+		<![endif]-->
+		<title>Professional Beauty Association</title>
+    </head>
+ <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+<center>
+<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+<tr>
+<td align="center" valign="top" id="bodyCell">
+<table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+<tr>
+<td align="center" valign="top">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
+<tr>
+<td valign="top" align="center" class="preheaderContent" style="padding:10px 0;">
+<div style="display:none;max-height:0;overflow:hidden">
+NAHA is moving to Long Beach!
+</div>
+<div style="display:none;max-height:0;overflow:hidden;width:600px">
+&nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj; &nbsp; &zwnj;
+</div>
+NAHA is Jan 26, 2019 | Email not displaying correctly? <a href="#" target="_blank">View it in your browser</a>.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+
+<tr>
+<td align="center" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+<tr>
+<td align="center" valign="bottom" style="padding:20px">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+
+<td valign="bottom" align="left" width="50%">
+<a href="https://probeauty.org" target="_blank"><img src="https://content.probeauty.org/email/common/pba_logo_black_336x130.png" alt="Professional Beauty Association" width="168" class="pba-logo" /></a>
+</td>
+
+<td valign="bottom" align="right" width="50%">
+<table role="presentation" border="0" cellspacing="0" cellpadding="0" align="right">
+<tr>
+
+<td>
+<a href="https://www.facebook.com/professionalbeautyassociation/" target="_blank"><img src="https://content.probeauty.org/email/common/fb_icon_19x36.png" alt="Facebook" width="10" height="18" border="0" class="social-icon" />
+</a>
+</td>
+
+<td valign="top" width="18"></td>
+
+<td>
+<a href="https://www.youtube.com/user/professionalbeauty" target="_blank"><img src="https://content.probeauty.org/email/common/yt_icon_45x36.png" alt="YouTube" width="18" height="18" border="0" class="social-icon" />
+</a>
+</td>
+
+<td valign="top" width="18"></td>
+
+<td><a href="https://www.linkedin.com/company/773783?trk=prof-exp-company-name" target="_blank"><img src="https://content.probeauty.org/email/common/in_icon_36x36.png" alt="LinkedIn" width="18" height="18" border="0" class="social-icon" /></a></td>
+<td valign="top" width="18"></td>
+
+<td>
+<a href="https://www.instagram.com/probeautyassoc/" target="_blank"><img src="https://content.probeauty.org/email/common/ig_icon_36x36.png" alt="Instagram" width="18" height="18" border="0" class="social-icon" />
+</a>
+</td>
+
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+<tr>
+<td valign="top">
+<img src="https://content.probeauty.org/email/2018/common_naha/naha_19_ticket_header_1200x769.png" alt="" class="img-100-mobile" style="display:block;width:600px" width="600" />
+</td>
+</tr>
+
+
+
+<tr>
+<td align="center" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody"><!-- // START TABLE TEMPLATEBODY -->
+<tr>
+<td valign="top" align="center" class="bodyContent" bgcolor="#FFFFFF">
+<table role="presentation" border="0" cellspacing="0" cellpadding="0" width="560" class="width-auto-mobile">
+
+<tr>
+<td valign="top" align="center">
+<p style="margin-bottom:0"><strong>SATURDAY, JANUARY 26, 2019</strong></p>
+<p>LONG BEACH, CALIFORNIA</p>
+<p style="margin-bottom:0">
+NAHA, the most prestigious photographic beauty competition in North America, is moving to Long Beach!
+</p>
+</td>
+</tr>
+
+<tr>
+<td height="60"></td>
+</tr>
+
+
+
+<tr>
+<td valign="top" align="center">
+<a href="https://probeauty.org/naha/?utm_source=email&utm_medium=naha1buybtn" target="_blank">
+<img src="https://content.probeauty.org/email/2018/common_naha/naha_19_ticket_button_480x114.png" alt="Buy tickets" class="img-100-mobile" style="width:270px" width="270" />
+</a>
+</td>
+</tr>
+
+
+<tr>
+<td height="60"></td>
+</tr>
+
+
+<tr>
+<td valign="top">
+<img src="https://content.probeauty.org/email/2018/common_naha/naha_19_ticket_ga_1120x340.png" class="img-100-mobile" style="width:560px" width="560" />
+</td>
+</tr>
+
+
+<tr>
+<td height="30"></td>
+</tr>
+
+
+<tr>
+<td valign="top">
+<img src="https://content.probeauty.org/email/2018/common_naha/naha_19_ticket_vip_1120x561.png" class="img-100-mobile" style="width:560px" width="560" />
+</td>
+</tr>
+
+
+<tr>
+<td height="30"></td>
+</tr>
+
+
+<tr>
+<td valign="top" align="center">
+<p style="margin-bottom:0;font-size:12px">
+* ISSE Package includes: A 3-day ISSE ticket, NAHA VIP seating, 
+entry into red carpet reception, NAHA after party, and two drink tickets.
+</p>
+</td>
+</tr>
+
+
+<tr>
+<td height="60"></td>
+</tr>
+
+
+<tr>
+<td valign="top" bgcolor="#FFFFFF" style="padding:20px">
+<table border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td valign="top">
+<img src="https://content.probeauty.org/email/2018/common_naha/members_save.png" alt="PBA Members save on NAHA tickets" style="width:375px" width="375" class="img-100-mobile">
+</td>
+</tr>
+
+<tr>
+<td height="10"></td>
+</tr>
+
+<tr>
+<td>
+<p style="margin-bottom:0;color:#000">PBA members receive discounts on NAHA, up to 50% off show tickets, discounts on paid education, plus other benefits all year round! 
+<a href="https://probeauty.org/join" target="_blank" style="color:#EA2747;font-weight:bold">Join PBA today</a>
+, to receive this exclusive member price.
+</p>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+<tr>
+<td height="60"></td>
+</tr>
+
+
+<tr>
+<td align="center" valign="bottom">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+
+<td valign="middle" align="center" width="130" class="d-block-mobile">
+<a href="https://probeauty.org" target="_blank"><img src="https://content.probeauty.org/email/common/tagline_large_white.png" alt="United by Beauty" width="120" />
+</a>
+</td>
+
+<td width="10" class="d-block-mobile"></td>
+
+<td valign="middle" align="left" width="420" class="d-block-mobile m-0-mobile">
+<p style="font-size:14px;margin:0;padding:0">
+	PBA is the largest and most inclusive membership association representing the professional beauty industry. We exist to elevate, unite, and serve the beauty industry - and the professionals who improve people’s lives.<br /> 
+	<a href="https://probeauty.org/" target="_blank" style="font-weight:bold;color:#FFFFFF">LEARN MORE</a>
+</p>
+</td>
+
+</tr>
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table><!-- // END TABLE TEMPLATEBODY -->
+</td>
+</tr>
+
+
+
+<tr>
+<td align="center" valign="top">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
+<tr>
+<td class="copyright" style="background:#FFFFFF;color:#000;font-size:12px;text-align:center;padding:8px 0">
+&copy; 2018 Professional Beauty Association <a href="https://probeauty.org/privacy/" target="_blank" style="color:#000">Privacy Policy</a> | <a href="https://probeauty.org/terms/" target="_blank" style="color:#000">Terms of Use</a>
+</td>
+</tr>
+<tr>
+<td valign="top"class="footerContent">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+<tr>
+<td align="center">
+<a href="https://www.instagram.com/probeautyassoc/" target="_blank" id="hash">
+<h3 class="text-center" style="color:#000">#unitedbybeauty</h3>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+</table>
+</td>
+</tr>
+</table>
+</center>
+<style data-ignore-inlining>/*<![CDATA[*/@media print{#_t{background-image:url('https://aijadbff.emltrk.com/aijadbff?p&d=%%to_email%%')}}div.OutlookMessageHeader{background-image:url('https://aijadbff.emltrk.com/aijadbff?f&d=%%to_email%%')}table.moz-email-headers-table{background-image:url('https://aijadbff.emltrk.com/aijadbff?f&d=%%to_email%%')}blockquote #_t{background-image:url('https://aijadbff.emltrk.com/aijadbff?f&d=%%to_email%%')}#MailContainerBody #_t{background-image:url('https://aijadbff.emltrk.com/aijadbff?f&d=%%to_email%%')}/*]]>*/</style><div id="_t"></div>
+<img src="https://aijadbff.emltrk.com/aijadbff?d=%%to_email%%" width="1" height="1" border="0" alt="" />
+</body>
+</html>
